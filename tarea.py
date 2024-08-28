@@ -17,4 +17,3 @@
 # Utiliza condicionales if-else anidados para verificar las condiciones mencionadas.
 
 d1 = int (input("ingrese el lado nuemro 1"))
-preuba = " actulizacion"

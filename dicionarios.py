@@ -23,11 +23,11 @@ nombres ={"nombre":"carlos","edad":20,"cursos":["python","javascript","nodejs"]}
 # print (nombres["cursos"])
 # print (nombres["cursos"][1])
 
-notas_estudiantes ={
-    "juan":[2.5,3,4.6],
-    "ana": [3.5,4.6,4.9],
-    "luis": [4,2.5,3.9]
-}
+# notas_estudiantes ={
+#     "juan":[2.5,3,4.6],
+#     "ana": [3.5,4.6,4.9],
+#     "luis": [4,2.5,3.9]
+# }
 #print(notas_estudiantes["juan"])
 #--------------------AGREGARAR DATOS A UN DICCIONARIO------------------------------
 """miDiccionario = {
@@ -55,23 +55,54 @@ print(prof)
 print(miDiccionario)"""
 
 #--------------agregar nultiples valores-------------------
+# miDiccionario = {
+#     "nombre": "sara",
+#     "edad":30,
+#     "profesion": "instrutora"
+#     }
+# print(miDiccionario)
+
+
+# nuevosDatos = {
+#     "cuidad":"cali",
+#     "documento": 123456,
+#     "telefono": 2222222
+# }
+# print(nuevosDatos)
+
+
+# for clave , valor in nuevosDatos.items():
+#     miDiccionario[clave]=valor
+
+# print(miDiccionario)
+
+#------------------------------METODO UPDATE---------
+# miDiccionario = {"nombre": "yeimer"}
+# #para agregar nuevos datos
+# nuevosDatos ={
+#     "profeccion": "tecnico",
+#     "cuidad": "riofrio",
+#     "telefono": "12345678"
+# }
+# miDiccionario.update(nuevosDatos)
+#print(miDiccionario)
+#---- eliminar multiples valores----------
+# miDiccionario ={"profeccion": "tecnico",
+#      "cuidad": "riofrio",
+#      "telefono": "12345678"}
+# claveEliminar =["cuidad","profeccion"]
+# for clave in claveEliminar:
+#     if clave in miDiccionario:
+#         del miDiccionario[clave]
+# print (miDiccionario)
+# #--------- co pernsion de dicionarios----
 miDiccionario = {
-    "nombre": "sara",
-    "edad":30,
-    "profesion": "instrutora"
-    }
-print(miDiccionario)
+  "profeccion": "tecnico",
+  "cuidad": "riofrio",
+  "edad": "23",
+  "telefono": "12345678"
+  }  
 
-
-nuevosDatos = {
-    "cuidad":"cali",
-    "documento": 123456,
-    "telefono": 2222222
-}
-print(nuevosDatos)
-
-
-for clave , valor in nuevosDatos.items():
-    miDiccionario[clave]=valor
-
-print(miDiccionario)
+claveborrar = ["ciudad","edad"]
+#ccreo un nuevo diccionario sin las claves a eliminar
+diccionarioFiltrado = {}
